@@ -1,0 +1,176 @@
+html,body{
+  height: 100%;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+#slider{
+  overflow: hidden;
+   width: 27%;
+  margin: 0 36.5%;
+  padding: 0;
+}
+.slides{
+  display: block;
+  width: 2000px;
+  margin: 0;
+  padding: 0;
+
+
+}
+.slide{
+  float: left;
+  list-style-type: none;
+
+
+
+
+}
+
+.menu{
+  line-height: 50px;
+  float: right;
+  margin: 10px;
+   display: none;
+  cursor:pointer;
+
+}
+.menubar{
+
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+     right: 10px;
+}
+
+.icon{
+  color: #000;
+  font-style: italic;
+  font-size: 180%;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  letter-spacing: 3px;
+  background:none;
+  border:none;
+}
+nav{
+  position:fixed ;
+	width:100%;
+  height: 60px;
+  background-color: rgba(142, 142, 142,.7);
+  z-index: 99;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+ margin-left: 30px;
+ line-height: 50px;
+ color: #D4CFFF;
+ font-size: 25px;
+ font-family: "Times New Roman", Georgia, Serif;
+}
+.sact{
+  height:100% ;
+		width:auto;
+  background-attachment: fixed;
+}
+.subsact{
+   height:50% ;
+		width:100%;
+  background-color: #7C7C7C ;
+}
+.sactcontact{
+   width:auto;
+    height: 100%;
+    background: url(http://sso-2.cloudskep.com/wp-content/uploads/2016/05/contact-us-banner.jpg) no-repeat center  ;
+    background-size: 100% 100%;
+   background-attachment: fixed;
+
+}
+.sactportofolio{
+	 width:auto;
+    height: 100%;
+    background: url(http://www.websiteworkbox.com/wp-content/uploads/2014/11/webdesign.png) no-repeat center  ;
+    background-size: 100% 100%;
+   background-attachment: fixed;
+}
+.sactmain{
+ width:auto;
+    height: 100%;
+    background: url(http://previews.123rf.com/images/olechowski/olechowski1210/olechowski121000031/15662062-Web-design-concept-in-word-tag-cloud-on-black-background-Stock-Photo.jpg) no-repeat center  ;
+    background-size: 100% 100%;
+   background-attachment: fixed;
+
+}
+
+.active{
+  background-color:rgba(255, 15, 15,.4);
+  padding:8px;
+  text-decoration:none
+  color:#D4CFFF;
+}
+a:link {
+  text-decoration:none;
+  color:#D4CFFF;
+}
+
+a:visited {
+  background-color:rgba(255, 15, 15,.4);
+ text-decoration:none;
+  color:#D4CFFF;
+}
+a:hover {
+  background-color:rgba(255, 15, 15,.4);
+ text-decoration:none;
+  color:#D4CFFF;
+}
+a:active {
+ background-color:rgba(255, 15, 15,.4);
+ text-decoration:none;
+  color:#D4CFFF;
+}
+
+
+.ico{
+   font-size:30px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 1120px) {
+
+  .menu{
+    display: block;
+  }
+  nav{
+    height:52px ;
+    overflow: hidden;
+
+  }
+  nav a{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding:5px;
+    border-bottom: 1px solid;
+    margin: 0px;
+  }
+
+  nav.open{
+    height: auto;
+  }
+
+
+}
+@media (max-width: 1120px) {
+#slider{
+  width: 60%;
+  margin: 0 20%;
+
+}
+
+}
