@@ -1,8 +1,10 @@
 
 
 $(document).ready(function(){
+
  function responsevimag(){
-   $('#QuotesSection').each(function(e){
+
+   $('#QuotesSection').each(function(){
      var hightofsec=$('#QuotesSection').height();
      var hightofimg=$('#QuotesSection ul li img').height();
     var widthslider=$('#slider').width();
@@ -29,7 +31,7 @@ $(document).ready(function(){
 
   function startslider(){
  interval= setInterval(function(){
-      window.onresize =responsevimag;
+      window.onresize =responsevimag();
     var widthslider=$('#slider').width();
 
     $slidercontainer.animate({'margin-left':'-='+widthslider},2500,function(){
@@ -39,7 +41,7 @@ $(document).ready(function(){
         $slidercontainer.css('margin-left',0);
       }
     });
-  },4000);
+  },3000);
   }
   function pauseslider(){
     clearInterval(interval);

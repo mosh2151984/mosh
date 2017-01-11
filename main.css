@@ -1,5 +1,8 @@
 html,body{
   height: 100%;
+  min-width: 400px;
+  min-height: 500px;
+
 }
 
 *{
@@ -15,7 +18,7 @@ html,body{
 }
 .slides{
   display: block;
-  width: 2000px;
+  width: 3000px;
   margin: 0;
   padding: 0;
 
@@ -140,9 +143,34 @@ a:active {
    font-size:30px;
   font-family: 'Orbitron', sans-serif;
 }
+#AboutSection{
+  padding-top:4%;
+  overflow: hidden;
+}
+#AboutSection p{
+  position: relative;
+  font-size: 150%;
+  font-weight: bolder;
+  text-indent:35px;
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: rgba(255, 0, 0, 0.1);
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: justify;
+}
 
 @media (max-width: 1120px) {
-
+#AboutSection p{
+  font-size: 130%;
+}
+  #slider{
+    width: 60%;
+    margin: 0 20%;
+  }
   .menu{
     display: block;
   }
@@ -164,13 +192,68 @@ a:active {
     height: auto;
   }
 
+}
+@media (max-height: 550px), (max-width: 300px) {
+#AboutSection{
+  padding-top:4%;
+}
+#AboutSection p{
+  position: relative;
+  font-size: 100%;
+  font-weight: bolder;
+  text-indent:50px;
+  font-family: 'Libre Franklin', sans-serif;
+  background-color:rgba(255, 0, 0, 0);
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  }
+}
+
+
+
+
+#ContactSection ul{
+  overflow: hidden;
+  padding-top: 30%;
+  text-align: center;
 
 }
-@media (max-width: 1120px) {
-#slider{
-  width: 60%;
-  margin: 0 20%;
+#ContactSection li {
+  display: inline;
+}
+#ContactSection li a{
+  font-size: 200%;
+  display:inline;
+  margin-right: 10px;
+  background-color: rgba(74, 74, 81, 0.8);
+  padding: 5px;
+}
+
+
+@media (max-width:1200px) {
+#ContactSection ul{
+    overflow: hidden;
+    padding-top: 20%;
+    text-align: center;
+  }
+#ContactSection li a{
+    font-size: 150%;
+    display:block;
+    border-bottom: 1Px solid;
+    width: 80%;
+    margin-left: 10%;
+  }
 
 }
+
+
+#ContactSection li a:hover{
+    font-size: 220%;
+    background-color: rgba(74, 84,110, 0.9)
+
 
 }
